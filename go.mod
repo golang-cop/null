@@ -1,3 +1,3 @@
-module github.com/golang-oop/null
+module github.com/golang-cop/null
 
 go 1.21.6
