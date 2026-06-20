@@ -19,9 +19,15 @@ func TestNewReturnsDataPointer(t *testing.T) {
 	}
 }
 
-func TestIsNul(t *testing.T) {
+func TestIsNull(t *testing.T) {
 	d := data{}
-	if !d.IsNul() {
-		t.Error("data.IsNul() = false; want true")
+	if !d.IsNull() {
+		t.Error("data.IsNull() = false; want true")
+	}
+}
+
+func TestIsNullThroughInterface(t *testing.T) {
+	if !New().IsNull() {
+		t.Error("New().IsNull() = false; want true")
 	}
 }

@@ -21,9 +21,9 @@ go get github.com/go-composites/null
 
 | symbol | kind | notes |
 | --- | --- | --- |
-| `Interface` | type | alias for `interface{}` — a `Null` satisfies every interface |
+| `Interface` | type | `interface { IsNull() bool }` — the Null-Object contract |
 | `New()` | `Interface` | returns a fresh, inert Null-Object |
-| `IsNul()` | `bool` (value method) | always `true` on a `Null` |
+| `IsNull()` | `bool` | always `true` on a `Null` — the defining predicate |
 
 ## Usage
 
